@@ -21,7 +21,7 @@ class Home
 	public function index()
 	{
 		$this->render('shared/header', []);
-		$this->render('shared/navbar', []);
+		$this->render('shared/navbar', ['is_faded' => false]);
 		$this->render('about',  []);
 		$this->render('shared/footer', []);
 	}

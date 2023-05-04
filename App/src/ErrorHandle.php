@@ -16,11 +16,9 @@ class ErrHandler {
 	}
 	
 	public function PageNotFound() {
-		//echo 'This is Home page';
+		//echo 'This is Error page Not Found';
 		$this->render('404', []);
 	}
 		
 	
 }
-
-?>

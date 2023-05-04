@@ -49,11 +49,11 @@ $is_faded = isset($this->view_data['is_faded']) ? $this->view_data['is_faded'] :
 	<div class="hidden lg:flex lg:gap-x-12">
 
 
-		<a href="<?= DOMAIN ?>/home" class="text-sm font-semibold leading-6">Home</a>
-		<a href="<?= DOMAIN ?>/about-us" class="text-sm font-semibold leading-6">About Us</a>
+		<a href="<?= DOMAIN ?>/home" class="Hind text-sm font-semibold leading-6">Home</a>
+		<a href="<?= DOMAIN ?>/home#About-us" class="Hind text-sm font-semibold leading-6">About Us</a>
 
 		<div class="relative">
-			<button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6" aria-expanded="false" id="dropdownBtn">
+			<button type="button" class="Hind flex items-center gap-x-1 text-sm font-semibold leading-6" aria-expanded="false" id="dropdownBtn">
 				Services
 				<svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
 					<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
@@ -152,23 +152,23 @@ $is_faded = isset($this->view_data['is_faded']) ? $this->view_data['is_faded'] :
 		</div>
 
 
-		<a href="<?= DOMAIN ?>/patrners" class="text-sm font-semibold leading-6">Our Partners</a>
+		<a href="<?= DOMAIN ?>/patrners" class="Hind text-sm font-semibold leading-6">Our Partners</a>
 	</div>
 	<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-		<a href="<?= DOMAIN ?>/contact-us" class="text-sm font-semibold leading-6">Contact Us <span aria-hidden="true">&rarr;</span></a>
+		<a href="<?= DOMAIN ?>/contact-us" class="Hind text-sm font-semibold leading-6">Contact Us <span aria-hidden="true">&rarr;</span></a>
 	</div>
 </nav>
 <!-- Mobile menu, show/hide based on menu open state. -->
 <div class="hidden" role="dialog" aria-modal="true" id="mobileNavbar">
 	<!-- Background backdrop, show/hide based on slide-over state. -->
-	<div class="fixed inset-0 z-10"></div>
-	<div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-20 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+	<div class="fixed inset-0 z-50"></div>
+	<div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-20 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 
 		<div class="mt-6 flow-root">
 			<div class="-my-6 divide-y divide-gray-500/10">
 				<div class="space-y-2 py-6">
 					<a href="<?= DOMAIN ?>/home" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-					<a href="<?= DOMAIN ?>/about-us" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
+					<a href="<?= DOMAIN ?>/home#About-us" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
 					<div class="-mx-3">
 						<button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false" id="mobileExpandBtn">
 							Services

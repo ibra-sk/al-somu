@@ -9,7 +9,7 @@ require 'config.php';
 include 'route.php';
 
 //Libraries
-include APP . 'lib/Database.php';
+//include APP . 'lib/Database.php';
 
 //Hanlders
 ////include APP . 'lib/Logger.php';
@@ -23,6 +23,8 @@ $route->add('/', 'Home', '');
 $route->add('/home', 'Home', '');
 $route->add('/about-us', 'Home', 'aboutPage');
 $route->add('/contact-us', 'Home', 'contactPage');
+$route->add('/post/email', 'Home', 'postContactForm');
+$route->add('/post/newsletter', 'Home', 'postNewsletterForm');
 
 
 

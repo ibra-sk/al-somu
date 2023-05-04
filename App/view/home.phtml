@@ -25,23 +25,68 @@
     }
 </style>
 <section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
-    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
         <video class="min-w-full min-h-full absolute object-cover" src="storage/home_playback.mp4" type="video/mp4" autoplay muted loop></video>
     </div>
     <div class="video-content space-y-2">
-        <div class="text-center">
-            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span class="block xl:inline text-white">Discover Your Next </span>
-                <span class="block text-indigo-600 xl:inline">Adventure with Us</span>
-            </h1>
-            <p class="mt-3 max-w-md mx-auto text-base text-gray-200 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Embark on a Journey of a Lifetime and Create Unforgettable Memories with Our Expertly Crafted Travel Packages, Tailored to Meet Your Every Need.
-            </p>
-            <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-                <div class="rounded-md shadow">
-                    <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                        Our Services
-                    </a>
+        <div class="absolute bottom-0 left-0 w-full">
+            <div class="flex">
+                <div class="grid grid-cols-4 w-full" id="slider-grid">
+                    <div class="relative h-48 cursor-pointer overflow-hidden translate-y-28 transition-all duration-800s hover:translate-y-0">
+                        <div class="absolute inset-0 flex flex-col p-6 text-center text-white bg-gradient-to-b from-black to-transparent ">
+                            <h2 class="Montserrat text-start text-md font-bold">Hotel</h2>
+                            <h2 class="Hind text-start text-2xl font-bold">Reservation</h2>
+                        </div>
+                        <img src="assets/images/luxury-classic-modern-bedroom-suite-hotel.jpg" alt="Card 1" class="w-full h-full object-cover transition-all duration-500 hover:translate-y-full">
+                    </div>
+                    <div class="relative h-48 cursor-pointer overflow-hidden translate-y-28 transition-all duration-800s hover:translate-y-0">
+                        <div class="absolute inset-0 flex flex-col p-6 text-center text-white bg-gradient-to-b from-black to-transparent ">
+                            <h2 class="Montserrat text-start text-md font-bold">Car</h2>
+                            <h2 class="Hind text-start text-2xl font-bold">Booking</h2>
+                        </div>
+                        <img src="assets/images/stylish-elegant-woman-car-salon.jpg" alt="Card 2" class="w-full h-full object-cover transition-all duration-500 hover:translate-y-full">
+                    </div>
+                    <div class="relative h-48 cursor-pointer overflow-hidden translate-y-28 transition-all duration-800s hover:translate-y-0">
+                        <div class="absolute inset-0 flex flex-col p-6 text-center text-white bg-gradient-to-b from-black to-transparent ">
+                            <h2 class="Montserrat text-start text-md font-bold">Travel</h2>
+                            <h2 class="Hind text-start text-2xl font-bold">Packages</h2>
+                        </div>
+                        <img src="assets/images/james-bond-islands-in-thailand-2022-11-10-17-55-09-utc.jpg" alt="Card 3" class="w-full h-full object-cover transition-all duration-500 hover:translate-y-full">
+                    </div>
+                    <div class="relative h-48 cursor-pointer overflow-hidden translate-y-28 transition-all duration-800s hover:translate-y-0">
+                        <div class="absolute inset-0 flex flex-col p-6 text-center text-white bg-gradient-to-b from-black to-transparent ">
+                            <h2 class="Montserrat text-start text-md font-bold">Visa</h2>
+                            <h2 class="Hind text-start text-2xl font-bold">Processing</h2>
+                        </div>
+                        <img src="assets/images/american-visa-document.jpg" alt="Card 4" class="w-full h-full object-cover transition-all duration-500 hover:translate-y-full">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<script>
+    const slider_grid = document.querySelector("#slider-grid")
+</script>
+
+
+<!--- About Us Section --->
+<section class="relative py-20 bg-white z-30" id="About-us">
+    <div class="container m-auto px-6 text-gray-800 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+
+            <div class="my-8 mx-12 md:7/12 lg:w-6/12">
+                <h2 class="Montserrat text-lg font-bold text-sky-500 uppercase">Get to Know Us</h2>
+                <h2 class="Hind text-2xl font-bold md:text-4xl"><span class="text-sky-500">AL-SOMU</span> TRAVEL AGENCY</h2>
+                <p class="Hind mt-6 font-medium">Looking for a company that specializes in travel and tourism services? Look no further than our team, dedicated to meeting the desires of customers in collaboration with our distinguished partners.
+                </p>
+
+                <div class="divide-y divide-sky-600">
+                    <p class="Hind mt-4 font-medium pb-4">Our mission is to provide a unique experience to every customer, with secure reservations and competitive prices that suit the needs of both individuals and companies. Trust us to deliver the best travel experience possible!
+                    </p>
+                    <h2 class="Parisienne text-3xl font-medium text-gray-500 pt-4">Bashaier Othman</h2>
                 </div>
             </div>
         </div>
@@ -49,121 +94,227 @@
 </section>
 
 
-<!--- About Us Section --->
-<div class="py-20 bg-white">
-    <div class="container m-auto px-6 text-gray-800 md:px-12 xl:px-6">
-        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-            <div class="md:5/12 lg:w-5/12">
-                <img src="assets/images/logo.png" alt="Big Billboard" width="" height="">
-            </div>
-            <div class="md:7/12 lg:w-6/12">
-                <h2 class="text-lg font-bold text-sky-500 uppercase">Get to Know Us</h2>
-                <h2 class="text-2xl font-bold md:text-4xl"><span class="text-sky-500">AL-SOMU</span> TRAVEL AGENCY</h2>
-                <p class="mt-6 font-medium">Looking for a company that specializes in travel and tourism services? Look no further than our team, dedicated to meeting the desires of customers in collaboration with our distinguished partners.
-                </p>
 
-                <div class="divide-y divide-sky-600">
-                    <p class="mt-4 font-medium pb-4">Our mission is to provide a unique experience to every customer, with secure reservations and competitive prices that suit the needs of both individuals and companies. Trust us to deliver the best travel experience possible!
-                    </p>
-                    <h2 class="text-lg font-medium text-gray-500pt-4">Bashaier Othman</h2>
+<!-- Places Slider Section -->
+<div class="flex mb-10 items-center justify-center bg-white">
+
+    <div class="grid md:grid-cols-4 sm:grid-rows-1">
+
+        <!-- Card 1 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">LONDON</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">UNITED KINGDOM</p>
                 </div>
-
-
             </div>
+            <img src="storage/united kingdom.jpg" class="w-full" alt="chair">
         </div>
+
+        <!-- Card 2 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">PARIS</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">FRANCE</p>
+                </div>
+            </div>
+            <img src="storage/france.jpg" class="w-full" alt="chair">
+        </div>
+
+        <!-- Card 3 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">SANTORINI</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">GREECE</p>
+                </div>
+            </div>
+            <img src="storage/greece.jpg" class="w-full" alt="chair">
+        </div>
+
+        <!-- Card 4 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">BARCELONA</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">SPAIN</p>
+                </div>
+            </div>
+            <img src="storage/spain.jpg" class="w-full" alt="chair">
+        </div>
+
+        <!-- Card 5 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">MILAN</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">ITALY</p>
+                </div>
+            </div>
+            <img src="storage/italy.jpg" class="w-full" alt="chair">
+        </div>
+
+        <!-- Card 6 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">TURKEY</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">ISTANBUL</p>
+                </div>
+            </div>
+            <img src="storage/turkey.jpg" class="w-full" alt="chair">
+        </div>
+
+        <!-- Card 7 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">LISBON</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">PORTUGAL</p>
+                </div>
+            </div>
+            <img src="storage/portugal.jpg" class="w-full" alt="chair">
+        </div>
+
+        <!-- Card 8 -->
+        <div class="sm:w-full relative">
+            <div class="absolute rounded-md w-full inset-0 bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h2 class="Montserrat text-xs text-sky-400">ZURICH</h2>
+                    <p class="Hind text-lg font-semibold leading-4 text-white mt-2">SWITZERLAND</p>
+                </div>
+            </div>
+            <img src="storage/switzerland.jpg" class="w-full" alt="chair">
+        </div>
+
     </div>
+
 </div>
 
 
 
-<!-- Places Slider Section -->
-<main class="min-h-screen bg-white flex items-center justify-center" x-data="carouselFilter()">
-    <div class="container grid grid-cols-1">
 
-        <div class="row-start-2 col-start-1" x-show="active == 0" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90">
-            <div class="grid grid-cols-1 grid-rows-1" x-data="carousel()" x-init="init()">
-                <div class="col-start-1 row-start-1 relative z-20 flex items-center justify-center pointer-events-none">
-
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 0" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">London, United Kingdom</h1>
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">Paris, France</h1>
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">Santorini, Greece</h1>
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 3" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">Barcelona, Spain</h1>
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 4" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">Milan, Italy</h1>
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 5" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">Istanbul, Turkey</h1>
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 6" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">Lisbon, Portugal</h1>
-                    <h1 class="absolute text-5xl uppercase font-black tracking-widest" x-show="active == 7" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-12" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-12">Zurich, Switzerland</h1>
+<!-- Stats -->
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center divide-x divide-sky-600">
+            <div class="p-4 sm:w-1/5 w-1/2 flex items-center justify-center">
+                <div class="text-gray-700 text-5xl">
+                    <i class="counter-icon flaticon-suntour-world"></i>
                 </div>
-
-
-                <div class="carousel col-start-1 row-start-1" x-ref="carousel">
-                    <div class="w-3/5 px-2">
-                        <img src="storage/united kingdom.jpg" loading="lazy">
-                    </div>
-                    <div class="w-3/5 px-2">
-                        <img src="storage/greece.jpg" loading="lazy">
-                    </div>
-                    <div class="w-3/5 px-2">
-                        <img src="storage/greece.jpg" loading="lazy">
-                    </div>
-                    <div class="w-3/5 px-2">
-                        <img src="storage/spain.jpg" loading="lazy">
-                    </div>
-                    <div class="w-3/5 px-2">
-                        <img src="storage/italy.jpg" loading="lazy">
-                    </div>
-                    <div class="w-3/5 px-2">
-                        <img src="storage/turkey.jpg" loading="lazy">
-                    </div>
-                    <div class="w-3/5 px-2">
-                        <img src="storage/portugal.jpg" loading="lazy">
-                    </div>
-                    <div class="w-3/5 px-2">
-                        <img src="storage/switzerland.jpg" loading="lazy">
-                    </div>
+                <div class="pt-4 px-2">
+                    <h2 class="Hind title-font font-medium sm:text-4xl text-3xl text-gray-800">
+                        <div data-count="345" class="counter">0</div>
+                    </h2>
+                    <p class="Montserrat leading-relaxed text-gray-400">Tours</p>
+                </div>
+            </div>
+            <div class="p-4 sm:w-1/5 w-1/2 flex items-center justify-center">
+                <div class="text-gray-700 text-5xl">
+                    <i class="counter-icon flaticon-suntour-fireworks"></i>
+                </div>
+                <div class=" pt-4 px-2">
+                    <h2 class="Hind title-font font-medium sm:text-4xl text-3xl text-gray-800">
+                        <div data-count="438" class="counter">0</div>
+                    </h2>
+                    <p class="Montserrat leading-relaxed text-gray-400">Holidays</p>
+                </div>
+            </div>
+            <div class="p-4 sm:w-1/5 w-1/2 flex items-center justify-center">
+                <div class="text-gray-700 text-5xl">
+                    <i class="counter-icon flaticon-suntour-hotel"></i>
+                </div>
+                <div class="pt-4 px-2">
+                    <h2 class="Hind title-font font-medium sm:text-4xl text-3xl text-gray-800">
+                        <div data-count="526" class="counter">0</div>
+                    </h2>
+                    <p class="Montserrat leading-relaxed text-gray-400">Hotels</p>
+                </div>
+            </div>
+            <div class="p-4 sm:w-1/5 w-1/2 flex items-center justify-center">
+                <div class="text-gray-700 text-5xl">
+                    <i class="counter-icon flaticon-suntour-airplane"></i>
+                </div>
+                <div class="pt-4 px-2">
+                    <h2 class="Hind title-font font-medium sm:text-4xl text-3xl text-gray-800">
+                        <div data-count="293" class="counter">0</div>
+                    </h2>
+                    <p class="Montserrat leading-relaxed text-gray-400">Flights</p>
+                </div>
+            </div>
+            <div class="p-4 sm:w-1/5 w-1/2 flex items-center justify-center">
+                <div class="text-gray-700 text-5xl">
+                    <i class="counter-icon flaticon-suntour-car"></i>
+                </div>
+                <div class="pt-4 px-2">
+                    <h2 class="Hind title-font font-medium sm:text-4xl text-3xl text-gray-800">
+                        <div data-count="675" class="counter">0</div>
+                    </h2>
+                    <p class="Montserrat leading-relaxed text-gray-400">Cars</p>
                 </div>
             </div>
         </div>
-
-
-
     </div>
-</main>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+</section>
+<script type="text/javascript" src="assets/vendor/jquery.min.js"></script>
 <script defer>
-    function carousel() {
-        return {
-            active: 0,
-            init() {
-                var flkty = new Flickity(this.$refs.carousel, {
-                    wrapAround: true
-                });
-                flkty.on('change', i => this.active = i);
-            }
-        }
-    }
+    var is_count = true;
 
-    function carouselFilter() {
-        return {
-            active: 0,
-            changeActive(i) {
-                this.active = i;
+    function counter() {
+        if ($(".counter").length) {
+            var winScr = $(window).scrollTop();
+            var winHeight = $(window).height();
+            var ofs = $(".counter").offset().top;
 
-                this.$nextTick(() => {
-                    let flkty = Flickity.data(this.$el.querySelectorAll('.carousel')[i]);
-                    flkty.resize();
+            $(window).on("scroll", function() {
+                winScr = $(window).scrollTop();
+                winHeight = $(window).height();
+                ofs = $(".counter").offset().top;
 
-                    console.log(flkty);
-                });
-            }
+                if (winScr + winHeight > ofs && is_count) {
+                    $(".counter").each(function() {
+                        var atr = $(this).attr("data-count");
+                        var item = $(this);
+                        var n = atr;
+                        var d = 0;
+                        var c;
+
+                        item.text(d);
+                        var interval = setInterval(function() {
+                            c = atr / 70;
+                            d += c;
+                            if (atr - d < c) {
+                                d = atr;
+                            }
+                            item.text(Math.floor(d));
+                            if (d == atr) {
+                                clearInterval(interval);
+                            }
+                        }, 50);
+                    });
+                    is_count = false;
+                }
+            });
         }
     }
 </script>
-
-
-
-
-
 
 
 <!--- Newsletter Section -->
@@ -171,13 +322,13 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div class="max-w-xl lg:max-w-lg">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
-                <p class="mt-4 text-lg leading-8 text-gray-300">Subscribe to our newsletter to get the latest travel deals and vacation booking discounts. We'll send you exclusive offers and promotions straight to your inbox, along with helpful travel tips and destination recommendations.</p>
-                <div class="mt-6 flex max-w-md gap-x-4">
-                    <label for="email-address" class="sr-only">Email address</label>
-                    <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
-                    <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
-                </div>
+                <h2 class="Montserrat text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
+                <p class="Hind mt-4 text-lg leading-8 text-gray-300">Subscribe to our newsletter to get the latest travel deals and vacation booking discounts. We'll send you exclusive offers and promotions straight to your inbox, along with helpful travel tips and destination recommendations.</p>
+                <form class="mt-6 flex max-w-md gap-x-4" id="newsForm">
+                    <label for="email" class="Hind sr-only">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+                    <button type="submit" class="Hind flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+                </form>
             </div>
             <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                 <div class="flex flex-col items-start">
@@ -186,8 +337,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
                         </svg>
                     </div>
-                    <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
-                    <dd class="mt-2 leading-7 text-gray-200">From tips on how to travel sustainably to guides on the best hidden gems to visit in popular tourist destinations, our articles aim to inspire and educate our readers</dd>
+                    <dt class="Montserrat mt-4 font-semibold text-white">Weekly articles</dt>
+                    <dd class="Hind mt-2 leading-7 text-gray-200">From tips on how to travel sustainably to guides on the best hidden gems to visit in popular tourist destinations, our articles aim to inspire and educate our readers</dd>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
@@ -195,8 +346,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
                         </svg>
                     </div>
-                    <dt class="mt-4 font-semibold text-white">No spam</dt>
-                    <dd class="mt-2 leading-7 text-gray-200">We only send emails that we believe will be of interest to you, such as travel deals, vacation booking discounts, and informative articles. We also promise not to share your email address with any third-party companies</dd>
+                    <dt class="Montserrat mt-4 font-semibold text-white">No spam</dt>
+                    <dd class="Hind mt-2 leading-7 text-gray-200">We only send emails that we believe will be of interest to you, such as travel deals, vacation booking discounts, and informative articles. We also promise not to share your email address with any third-party companies</dd>
                 </div>
             </dl>
         </div>
@@ -205,3 +356,65 @@
         <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
 </div>
+<script src="assets/vendor/sweetalert2.min.js"></script>
+<script defer>
+    //"use strict"; // start of use strict
+
+    $(document).ready(function() {
+        counter();
+
+        const newsForm = document.querySelector('#newsForm');
+        newsForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // handle submit
+            const emailInput = document.querySelector('#email');
+            const email = emailInput.value;
+
+            let data = new FormData(newsForm);
+
+            fetch("<?= DOMAIN ?>/post/newsletter", {
+                    method: "POST",
+                    body: data
+                })
+
+                // (C) RETURN SERVER RESPONSE AS TEXT
+                .then(res => {
+                    if (res.status != 200) {
+                        throw new Error("Bad Server Response");
+                    }
+                    return res.text();
+                })
+
+                // (D) SERVER RESPONSE
+                .then(res => {
+                    responseVal = JSON.parse(res);
+                    if (responseVal.is_errors === 1) {
+                        console.log(responseVal.info);
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Failed to Subscribe',
+                            text: 'Something went wrong!, please try again.'
+                        })
+                    } else {
+                        emailInput.value = '';
+                        Swal.fire(
+                            'Congratulation on your Subscription',
+                            'You will receive our offers directly on your inbox.',
+                            'success'
+                        );
+                    }
+                })
+
+                // (E) HANDLE ERRORS - OPTIONAL
+                .catch(err => {
+                    console.error(err);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Unable to Subscribe now',
+                        text: 'We are having issue on our server, please try again lates'
+                    })
+                });
+        });
+    });
+</script>

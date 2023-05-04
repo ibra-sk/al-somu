@@ -2,12 +2,12 @@
 const DS = DIRECTORY_SEPARATOR;
 $protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']), 'https') === FALSE ? 'http' : 'https';
 $xampp = ($_SERVER['HTTP_HOST'] === '127.0.0.1') ? '/@Maqtech/agency' : '';
-$folder_repo = ($_SERVER['HTTP_HOST'] === '127.0.0.1') ? (DS . "agency") : "";
+$folder_repo = ($_SERVER['HTTP_HOST'] === '127.0.0.1') ? (dirname(__DIR__)  . DS . "agency") : "";
 define('DOMAIN', $protocol . '://' . $_SERVER['HTTP_HOST'] . $xampp);
 //define('DOMAIN', "http://127.0.0.1/@Maqtech/agency");
 define('TITLE', "Al-Somu");
-define('APP', dirname(__DIR__)  . $folder_repo . DS . "App" . DS);
-define('DATA', dirname(__DIR__) . $folder_repo . DS . "storage" . DS);
+define('APP',  "App" . DS);
+define('DATA', "storage" . DS);
 //define('LOGS', dirname(__DIR__) . $folder_repo . DS . "App" . DS . "websys_log" . DS);
 
 define('DB_TYPE', 'mysql');
